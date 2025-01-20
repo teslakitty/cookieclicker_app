@@ -1,0 +1,129 @@
+/* Ensure body is centered */
+/* Apply a background image to the body */
+body {
+  background: url('https://teslakitty-cdn.netlify.app/cookie2/background.png') no-repeat center center fixed; 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  user-select: none;
+}
+
+
+/* Make the cookie image responsive */
+#cookie {
+  cursor: pointer;
+  user-select: none;
+  animation: bounce 1s;
+  width: 50%; /* Adjust the size for smaller screens */
+  max-width: 200px; /* Limit the max size */
+  height: auto;
+}
+
+/* Make the score responsive */
+#score {
+  font-size: 3rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Adjust buttons for smaller screens */
+button {
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: black;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style for the music toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  z-index: 10;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+/* Style for the volume slider */
+#volumeSlider {
+  margin-top: 1rem;
+  width: 150px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  #cookie {
+    width: 30%;
+  }
+
+  #score {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #cookie {
+    width: 20%;
+  }
+
+  #score {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+}
+
+#info{
+  font-size: 30px;
+}

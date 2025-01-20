@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookie Clicker Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="https://teslakitty-cdn.netlify.app/favicon.ico" type="image/x-icon">
+  </head> 
+
+  <body onload="init()">
+    <img
+      id="cookie"
+      src="cookie.jpg"
+      alt="Cookie Image"
+      onclick="handleClick()"
+    />
+    <div id="score">
+      Cookie Score: <span id="count">0</span>
+      
+    </div>
+    <button id="restartButton" onclick="handleRestartClick()">
+      Restart
+    </button>
+
+    <!-- Music toggle switch -->
+    <label class="switch">
+      <input type="checkbox" id="musicToggle" onclick="toggleMusic()">
+      <span class="slider round"></span>
+    </label>
+
+    <!-- Volume slider -->
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="1" oninput="adjustVolume(this.value)">
+
+    <audio id="music" src="music.mp3" loop></audio>
+
+    <img src="monster.png" alt="Cookie Monster" id="cookie-monster">
+
+    <button onclick="window.location.href='info.html'">site info</button>
+
+    <script type="text/javascript" src="script.js"></script>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch((error) => {
+              console.log('Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,5 +1,4 @@
-/* Ensure body is centered */
-/* Apply a background image to the body */
+/* General styling for KaiOS */
 body {
   background: url('https://teslakitty-cdn.netlify.app/cookie2/background.png') no-repeat center center fixed; 
   background-size: cover;
@@ -14,35 +13,29 @@ body {
   user-select: none;
 }
 
-
-/* Make the cookie image responsive */
 #cookie {
   cursor: pointer;
   user-select: none;
-  animation: bounce 1s;
-  width: 50%; /* Adjust the size for smaller screens */
-  max-width: 200px; /* Limit the max size */
+  width: 50%;
+  max-width: 200px;
   height: auto;
 }
 
-/* Make the score responsive */
 #score {
-  font-size: 3rem;
-  margin-top: 2rem;
+  font-size: 2rem;
+  margin-top: 1rem;
   text-align: center;
   font-weight: bold;
 }
 
-/* Adjust buttons for smaller screens */
 button {
   margin-top: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 0.5rem;
   background-color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   color: black;
 }
 
@@ -50,13 +43,11 @@ button:hover {
   background-color: #f2f2f2;
 }
 
-/* Style for the music toggle switch */
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 34px;
-  z-index: 10;
 }
 
 .slider {
@@ -68,10 +59,6 @@ button:hover {
   bottom: 0;
   background-color: #ccc;
   transition: .4s;
-  border-radius: 34px;
-}
-
-.slider.round {
   border-radius: 34px;
 }
 
@@ -87,43 +74,8 @@ button:hover {
   border-radius: 50%;
 }
 
-/* Style for the volume slider */
 #volumeSlider {
   margin-top: 1rem;
   width: 150px;
-  z-index: 10;
   cursor: pointer;
-}
-
-/* Responsive adjustments */
-@media (min-width: 600px) {
-  #cookie {
-    width: 30%;
-  }
-
-  #score {
-    font-size: 2rem;
-  }
-
-  button {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 900px) {
-  #cookie {
-    width: 20%;
-  }
-
-  #score {
-    font-size: 2.5rem;
-  }
-
-  button {
-    font-size: 1.5rem;
-  }
-}
-
-#info{
-  font-size: 30px;
 }

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "cookie clicker",
   "description": "cookie clicker",
   "type": "web",
@@ -14,8 +14,8 @@
   },
   "locales": {
     "en-US": {
-      "name": "KaiOS App",
-      "subtitle": "app verison 1.0.3",
+      "name": "cookie clicker",
+      "subtitle": "app verison 1.0.4",
       "description": "cookie clicker based on of the main site cookie2.netlify.app"
     }
   },

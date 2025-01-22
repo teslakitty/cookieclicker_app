@@ -1,12 +1,12 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "name": "cookie clicker",
   "description": "cookie clicker",
   "type": "web",
   "launch_path": "/index.html",
   "icons": {
-    "56": "/icons/ic_Appname_56.png",
-    "112": "/icons/ic_Appname_112.png"
+    "56": "/icons/icon_56.png",
+    "112": "/icons/icon_128.png"
   },
   "developer": {
     "name": "teslakitty",
